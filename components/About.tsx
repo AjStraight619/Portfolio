@@ -18,7 +18,7 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        My passion for
+        My passion for{" "}
         <span className="font-medium">technology and solving problems</span>,
         led me to pursue a career in{" "}
         <span className="italic">Computer Science. </span>
