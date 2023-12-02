@@ -1,10 +1,23 @@
 "use client";
-import { useEffect, useState } from "react";
-import { BsMoon, BsSun } from "react-icons/bs";
+
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = "light" | "dark";
 
-const ThemeSwitch = () => {
+type ThemeContextProviderProps = {
+  children: React.ReactNode;
+};
+
+type ThemeContextType = {
+  theme: Theme;
+  toggleTheme: () => void;
+};
+
+const ThemeContext = createContext<ThemeContextType | null>(null);
+
+export default function ThemeContextProvider({
+  children,
+}: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
 
   const toggleTheme = () => {
@@ -21,8 +34,10 @@ const ThemeSwitch = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
+
     if (localTheme) {
       setTheme(localTheme);
+
       if (localTheme === "dark") {
         document.documentElement.classList.add("dark");
       }
@@ -33,13 +48,23 @@ const ThemeSwitch = () => {
   }, []);
 
   return (
-    <button
-      className="fixed bottom-5 right-5 bg-white h-[3rem] w-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition"
-      onClick={toggleTheme}
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+      }}
     >
-      {theme === "light" ? <BsSun /> : <BsMoon />}
-    </button>
+      {children}
+    </ThemeContext.Provider>
   );
-};
+}
 
-export default ThemeSwitch;
+export function useTheme() {
+  const context = useContext(ThemeContext);
+
+  if (context === null) {
+    throw new Error("useTheme must be used within a ThemeContextProvider");
+  }
+
+  return context;
+}

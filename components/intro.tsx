@@ -1,6 +1,6 @@
 "use client";
 
-import { useActiveSectionContext } from "@/context/active-section-context";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
