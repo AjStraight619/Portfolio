@@ -39,20 +39,6 @@ export default function Intro() {
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
-
-          <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
@@ -64,7 +50,7 @@ export default function Intro() {
         <span className="font-bold">Hello, I'm Alex.</span> I'm an aspiring{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I am currently
-        studying <span className="font-bold"></span> Computer Science at{" "}
+        studying <span className="underline">Computer Science</span> at{" "}
         <span className="font-bold">San Diego State Univeristy</span> I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React (Next.js)</span>.
