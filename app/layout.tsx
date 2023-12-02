@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
 import ThemeContextProvider from "@/context/ThemeContext";
 import { Inter } from "next/font/google";

@@ -59,22 +59,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Note Genius",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Note Genius is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
+    tags: ["React", "Next.js", "MySQL", "Tailwind", "Prisma"],
+    imageUrl: "/note-genius.png",
+  },
+
+  {
+    title: "Pathfinding Visualizer",
+    description:
+      "Pathfinding Visualizer is a web app that visualizes pathfinding algorithms. It's built with React and TypeScript.",
+    tags: ["React", "TypeScript"],
+    imageUrl: "",
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    title: "Research",
+    description: "Research on Reconfigurable Intelligent Surfaces.",
+    tags: ["Python", "MATLAB"],
+    imageUrl: "",
   },
 ] as const;
 
@@ -91,4 +94,5 @@ export const skillsData = [
   "Prisma",
   "Python",
   "Framer Motion",
+  "React Spring",
 ] as const;
