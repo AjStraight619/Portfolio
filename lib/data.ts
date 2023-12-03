@@ -73,12 +73,6 @@ export const projectsData = [
     tags: ["React", "TypeScript"],
     imageUrl: "",
   },
-  {
-    title: "Research",
-    description: "Research on Reconfigurable Intelligent Surfaces.",
-    tags: ["Python", "MATLAB"],
-    imageUrl: "",
-  },
 ] as const;
 
 export const skillsData = [

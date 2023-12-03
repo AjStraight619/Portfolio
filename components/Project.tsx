@@ -4,7 +4,6 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import image3 from "../public/next.svg";
 import image1 from "../public/note-genius.png";
 import image2 from "../public/pathfinding.png";
 
@@ -52,13 +51,7 @@ export default function Project({
         </div>
 
         <Image
-          src={
-            title === "Note Genius"
-              ? image1
-              : title === "Pathfinding Visualizer"
-              ? image2
-              : image3
-          }
+          src={title === "Note Genius" ? image1 : image2}
           alt="Project I worked on"
           quality={100}
           blurDataURL="data..."
