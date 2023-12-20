@@ -41,5 +41,6 @@ export const sendEmail = async (formData: FormData) => {
 
   return {
     data,
+    success: "Message sent successfully",
   };
 };

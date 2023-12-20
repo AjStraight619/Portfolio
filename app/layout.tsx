@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
 import ThemeContextProvider from "@/context/ThemeContext";
 import { Inter } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 import ThemeSwitch from "@/components/ThemeSwitch";
 import "./globals.css";
@@ -32,6 +33,7 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
+        <Toaster />
       </body>
     </html>
   );
