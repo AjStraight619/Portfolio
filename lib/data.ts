@@ -55,11 +55,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Note Genius",
+    title: "Math Base",
     description:
-      "Note Genius is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
-    tags: ["React", "Next.js", "MySQL", "Tailwind", "Prisma"],
-    imageUrl: "/note-genius.png",
+      "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
+    tags: ["React", "Next.js", "MySQL", "Tailwind", "Prisma", "Framer Motion"],
+    imageUrl: "/mathbase.png",
+    href: "https://math-base.vercel.app/",
   },
 
   {
@@ -68,6 +69,7 @@ export const projectsData = [
       "Pathfinding Visualizer is a web app that visualizes pathfinding algorithms. It's built with React and TypeScript.",
     tags: ["React", "TypeScript"],
     imageUrl: "",
+    href: "https://algo-visualizer-nine.vercel.app/",
   },
 ] as const;
 

@@ -3,8 +3,10 @@
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
-import image1 from "../public/note-genius.png";
+import { PiArrowSquareOutBold } from "react-icons/pi";
+import image1 from "../public/mathbase.png";
 import image2 from "../public/pathfinding.png";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -14,6 +16,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  href,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -34,8 +37,14 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          <Link
+            href={href}
+            className="group bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition justify-evenly"
+          >
+            <h3 className="text-[1rem] font-semibold">{title}</h3>
+            <PiArrowSquareOutBold className="opacity-70 group-hover:translate-x-1 transition" />
+          </Link>
+          <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
@@ -51,7 +60,7 @@ export default function Project({
         </div>
 
         <Image
-          src={title === "Note Genius" ? image1 : image2}
+          src={title === "Math Base" ? image1 : image2}
           alt="Project I worked on"
           quality={100}
           blurDataURL="data..."
