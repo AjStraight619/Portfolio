@@ -3,7 +3,6 @@
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { useRef } from "react";
 import { PiArrowSquareOutBold } from "react-icons/pi";
 import image1 from "../public/mathbase.png";
@@ -37,13 +36,14 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <Link
+          <a
             href={href}
             className="group bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition justify-evenly"
+            target="_blank"
           >
             <h3 className="text-[1rem] font-semibold">{title}</h3>
             <PiArrowSquareOutBold className="opacity-70 group-hover:translate-x-1 transition" />
-          </Link>
+          </a>
           <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>

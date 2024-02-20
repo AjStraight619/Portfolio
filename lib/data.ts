@@ -21,6 +21,10 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -28,27 +32,27 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Full-Stack Developer",
+    location: "San Diego, CA",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, and Prisma. I'm open to full-time opportunities.",
+    icon: React.createElement(FaReact),
+    date: "2019",
+  },
+  {
     title: "Attending San Diego State University",
     location: "San Diego, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I am currently attending San Diego State University, majoring in Computer Science. I am expected to graduate in 2025. I am currently looking for a summer internship.",
     icon: React.createElement(LuGraduationCap),
-    date: "2023",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
     date: "2019 - 2021",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Research Assistant",
+    location: "San Diego, CA",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      "I worked as a research assistant at San Deigo State University. I worked on a project that involved optimizing data rates for a NOMA (Non-Orthogonal Multiple Access) system. I used Python and MATLAB for this project.",
+    icon: React.createElement(CgWorkAlt),
     date: "2021 - present",
   },
 ] as const;
@@ -60,7 +64,7 @@ export const projectsData = [
       "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
     tags: ["React", "Next.js", "MySQL", "Tailwind", "Prisma", "Framer Motion"],
     imageUrl: "/mathbase.png",
-    href: "https://math-base.vercel.app/",
+    href: "https://mathbase2.vercel.app/",
   },
 
   {
@@ -86,5 +90,4 @@ export const skillsData = [
   "Prisma",
   "Python",
   "Framer Motion",
-  "React Spring",
 ] as const;
