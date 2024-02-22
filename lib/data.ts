@@ -64,7 +64,7 @@ export const projectsData = [
       "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
     tags: ["React", "Next.js", "MySQL", "Tailwind", "Prisma", "Framer Motion"],
     imageUrl: "/mathbase.png",
-    href: "https://mathbase2.vercel.app/",
+    href: "https://math-base-final.vercel.app/",
   },
 
   {
