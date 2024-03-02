@@ -1,5 +1,4 @@
 "use client";
-
 import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import React from "react";
