@@ -24,7 +24,13 @@ export default function Experience() {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
-    <motion.div ref={targetRef}>
+    <motion.div
+      ref={targetRef}
+      //   style={{
+      //     scale: scaleProgess,
+      //     opacity: opacityProgess,
+      //   }}
+    >
       <section
         id="experience"
         ref={ref}
