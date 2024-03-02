@@ -5,6 +5,10 @@ import { links } from "@/lib/data";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import Link from "next/link";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0faa8374f1985ae00ecd0797da5c04e0d423d096
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
