@@ -5,13 +5,12 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { PiArrowSquareOutBold } from "react-icons/pi";
-import image1 from "../public/mathbase.png";
-import image2 from "../public/pathfinding.png";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
+  subtitle,
   description,
   tags,
   imageUrl,
@@ -42,8 +41,12 @@ export default function Project({
             target="_blank"
           >
             <h3 className="text-[1rem] font-semibold">{title}</h3>
+
             <PiArrowSquareOutBold className="opacity-70 group-hover:translate-x-1 transition" />
           </a>
+          <h5 className="text-center text-[0.8rem] tracking-tight font-semibold pt-1">
+            {subtitle}
+          </h5>
           <p className="mt-2 text-sm leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
@@ -60,8 +63,10 @@ export default function Project({
         </div>
 
         <Image
-          src={title === "Math Base" ? image1 : image2}
+          src={imageUrl}
           alt="Project I worked on"
+          width={600}
+          height={400}
           quality={100}
           blurDataURL="data..."
           placeholder="blur"
