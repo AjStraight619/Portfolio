@@ -53,7 +53,7 @@ export default function Intro() {
         studying <span className="underline">Computer Science</span> at{" "}
         <span className="font-bold">San Diego State Univeristy</span> I enjoy
         building <span className="italic">web applications</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="underline">React and Next.js</span>.
       </motion.h1>
 
       <motion.div

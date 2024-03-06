@@ -21,11 +21,10 @@ export default function About() {
         My passion for{" "}
         <span className="font-medium">technology and solving problems</span>,
         led me to pursue a career in{" "}
-        <span className="italic">Computer Science. </span>
+        <span className="font-semibold">Computer Science. </span>
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        feeling of finding a solution to a problem. My core stack is{" "}
         <span className="font-medium">React, Next.js, Node.js, and MySQL</span>.
         I am also familiar with TypeScript and Prisma. I am always looking to
         learn new technologies. I am currently looking for a{" "}
