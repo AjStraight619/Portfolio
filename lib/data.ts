@@ -139,4 +139,5 @@ export const skillsData = [
   "Prisma",
   "Python",
   "Framer Motion",
+  "Zod",
 ] as const;
