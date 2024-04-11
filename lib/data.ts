@@ -80,13 +80,13 @@ export const projectsData = [
       "TypeScript",
       "React",
       "Next.js",
-      "MySQL",
       "Tailwind",
       "Prisma",
       "Framer Motion",
+      "Zod",
     ],
     imageUrl: "/mathbase.png",
-    href: "https://math-base-final.vercel.app/",
+    href: "https://ai-math-base.vercel.app/",
   },
 
   {
