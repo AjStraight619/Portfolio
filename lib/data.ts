@@ -68,6 +68,15 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2023 - present",
   },
+  {
+    title: "Internship at AcademicAssist",
+    subtitle: "Frontend Developer",
+    location: "San Diego, CA",
+    description:
+      "I am currently working as a frontend developer intern at AcademicAssist. I am reworking their landing page, and adding new features to their web app. I am using React, TypeScript, and Tailwind for this project.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+  },
 ] as const;
 
 export const projectsData = [
