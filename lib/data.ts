@@ -77,9 +77,37 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
+
+  {
+    title: "Paid Internship at San Diego State University",
+    subtitle: "Frontend Developer",
+    location: "San Diego, CA",
+    description: "Currently building a website for the Computer Science department at San Deigo State University",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 - present",
+
+  }
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Pictionary",
+    subtitle: "Still in development",
+    description:
+      "Multiplayer game inspired by Skribbl.io",
+    tags: [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Liveblocks",
+      "Tailwind",
+      "Prisma",
+      "Framer Motion",
+      "Zod",
+    ],
+    imageUrl: "/pictionary.png",
+    href: "https://pictionary-zeta.vercel.app/room/20",
+  },
   {
     title: "Math Base",
     subtitle: "Refactoring in progress",
