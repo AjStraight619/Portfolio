@@ -68,6 +68,7 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "2023 - present",
   },
+
   {
     title: "Internship at AcademicAssist",
     subtitle: "Frontend Developer",
@@ -82,19 +83,18 @@ export const experiencesData = [
     title: "Paid Internship at San Diego State University",
     subtitle: "Frontend Developer",
     location: "San Diego, CA",
-    description: "Currently building a website for the Computer Science department at San Deigo State University",
+    description:
+      "Currently building a website for the Computer Science department at San Deigo State University",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
-
-  }
+  },
 ] as const;
 
 export const projectsData = [
   {
     title: "Pictionary",
     subtitle: "Still in development",
-    description:
-      "Multiplayer game inspired by Skribbl.io",
+    description: "Multiplayer game inspired by Skribbl.io",
     tags: [
       "TypeScript",
       "React",
