@@ -61,7 +61,7 @@ export const experiencesData = [
 
   {
     title: "Attending San Diego State University",
-    subtitle: "Computer Science, Major GPA: 3.7",
+    subtitle: "Computer Science, Major GPA: 4.0",
     location: "San Diego, CA",
     description:
       "I am currently attending San Diego State University, majoring in Computer Science. I am expected to graduate in 2025. I am currently looking for a summer internship.",
@@ -99,7 +99,8 @@ export const projectsData = [
       "TypeScript",
       "React",
       "Next.js",
-      "Liveblocks",
+      "Go",
+      "gorilla/websocket",
       "Tailwind",
       "Prisma",
       "Framer Motion",
