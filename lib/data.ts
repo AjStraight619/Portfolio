@@ -108,23 +108,23 @@ export const projectsData = [
     imageUrl: "/pictionary.png",
     href: "https://pictionary-zeta.vercel.app/room/20",
   },
-  {
-    title: "Math Base",
-    subtitle: "Refactoring in progress",
-    description:
-      "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
-    tags: [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind",
-      "Prisma",
-      "Framer Motion",
-      "Zod",
-    ],
-    imageUrl: "/mathbase.png",
-    href: "https://ai-math-base.vercel.app/",
-  },
+  // {
+  //   title: "Math Base",
+  //   subtitle: "Refactoring in progress",
+  //   description:
+  //     "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
+  //   tags: [
+  //     "TypeScript",
+  //     "React",
+  //     "Next.js",
+  //     "Tailwind",
+  //     "Prisma",
+  //     "Framer Motion",
+  //     "Zod",
+  //   ],
+  //   imageUrl: "/mathbase.png",
+  //   href: "https://ai-math-base.vercel.app/",
+  // },
 
   {
     title: "Pathfinding Visualizer",
