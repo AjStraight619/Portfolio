@@ -131,7 +131,7 @@ export const projectsData = [
     title: "Pathfinding Visualizer",
     subtitle: "Completed",
     description:
-      "Pathfinding Visualizer is a web app that visualizes pathfinding algorithms. It's built with React and TypeScript.",
+      "Pathfinding Visualizer is a web app that visualizes pathfinding algorithms.",
     tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
     imageUrl: "/pathfinding.png",
     href: "https://algo-visualizer-nine.vercel.app/",
@@ -139,8 +139,7 @@ export const projectsData = [
   {
     title: "Link Tree Clone",
     subtitle: "Still in development",
-    description:
-      "Link Tree Clone is a clone of the popular Link Tree website. It's built with React and Tailwind.",
+    description: "Link Tree Clone is a clone of the popular Link Tree website.",
     tags: [
       "TypeScript",
       "React",
