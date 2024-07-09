@@ -107,7 +107,7 @@ export const projectsData = [
       "Zod",
     ],
     imageUrl: "/pictionary.png",
-    href: "https://pictionary-zeta.vercel.app/room/20",
+    href: "https://pictionary-tan.vercel.app/",
   },
   // {
   //   title: "Math Base",
