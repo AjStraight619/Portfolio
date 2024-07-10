@@ -122,7 +122,6 @@ export const projectsData = [
     description: "Link Tree Clone is a clone of the popular Link Tree website.",
     tags: [
       "TypeScript",
-      "React",
       "Next.js",
       "Postgres",
       "Tailwind",
