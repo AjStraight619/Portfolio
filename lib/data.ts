@@ -84,7 +84,7 @@ export const experiencesData = [
     subtitle: "Frontend Developer",
     location: "San Diego, CA",
     description:
-      "Currently building a website for the Computer Science department at San Deigo State University",
+      "Currently building a website for the Computer Science department at San Deigo State University. Implemented authentication with auth.js.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
@@ -94,13 +94,12 @@ export const projectsData = [
   {
     title: "Pictionary",
     subtitle: "Still in development",
-    description: "Multiplayer game inspired by Skribbl.io",
+    description:
+      "Multiplayer game inspired by Skribbl.io. Using Go for WebSocket communication with the client.",
     tags: [
       "TypeScript",
-      "React",
       "Next.js",
       "Go",
-      "gorilla/websocket",
       "Tailwind",
       "Prisma",
       "Framer Motion",
@@ -109,29 +108,10 @@ export const projectsData = [
     imageUrl: "/pictionary.png",
     href: "https://pictionary-tan.vercel.app/",
   },
-  // {
-  //   title: "Math Base",
-  //   subtitle: "Refactoring in progress",
-  //   description:
-  //     "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
-  //   tags: [
-  //     "TypeScript",
-  //     "React",
-  //     "Next.js",
-  //     "Tailwind",
-  //     "Prisma",
-  //     "Framer Motion",
-  //     "Zod",
-  //   ],
-  //   imageUrl: "/mathbase.png",
-  //   href: "https://ai-math-base.vercel.app/",
-  // },
-
   {
     title: "Pathfinding Visualizer",
     subtitle: "Completed",
-    description:
-      "Pathfinding Visualizer is a web app that visualizes pathfinding algorithms.",
+    description: "Visualize pathfinding algorithms.",
     tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
     imageUrl: "/pathfinding.png",
     href: "https://algo-visualizer-nine.vercel.app/",
@@ -169,3 +149,21 @@ export const skillsData = [
   "Framer Motion",
   "Zod",
 ] as const;
+
+// {
+//   title: "Math Base",
+//   subtitle: "Refactoring in progress",
+//   description:
+//     "Math Base is an AI-powered web app for student exam preparation, integrating Wolfram Alpha for advanced math solutions and featuring robust note organization tools.",
+//   tags: [
+//     "TypeScript",
+//     "React",
+//     "Next.js",
+//     "Tailwind",
+//     "Prisma",
+//     "Framer Motion",
+//     "Zod",
+//   ],
+//   imageUrl: "/mathbase.png",
+//   href: "https://ai-math-base.vercel.app/",
+// },
