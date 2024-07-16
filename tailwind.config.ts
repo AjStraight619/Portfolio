@@ -16,6 +16,9 @@ const config: Config = {
     },
   },
   plugins: [],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   darkMode: "class",
 };
 export default config;
